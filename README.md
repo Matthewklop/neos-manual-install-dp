@@ -15,8 +15,9 @@ Step 2: Get the IP Address
 
 Step 3: Download the NEOS Default/Setup SSH Key
 
-    Download and save the NEOS default/setup SSH key to your machine as id_rsa.
-        Note: This is different from any GitHub SSH key you may have.
+Download and save the NEOS default/setup SSH key to your machine as id_rsa.
+
+Note: This is different from any GitHub SSH key you may have.
 
 Step 4: Connect to Your EON/C2
 
@@ -28,7 +29,7 @@ Open a terminal and run the following command, replacing [pathname of saved id_r
 
     bash ssh -i [pathname of saved id_rsa] comma@[your-c2-ip-address]
 
-        Note: If your browser saved the id_rsa file with a different extension (like .txt or .pem), you may need to adjust the file name accordingly.
+Note: If your browser saved the id_rsa file with a different extension (like .txt or .pem), you may need to adjust the file name accordingly.
 
 Step 5: Install DragonPilot
 
