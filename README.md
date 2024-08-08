@@ -1,31 +1,34 @@
-# neos-manual-install
+Basic Usage
 
-Stuck here? You're not alone.
+Installing DragonPilot (Release 2):
 
-![Screenshot](neos-installer-stuck.jpg)
+    Connect to Wi-Fi:
+        Connect your device to Wi-Fi as you normally would.
 
-This repo contains a downloadable, executable script that bypasses NEOS Setup to install openpilot. This appears to be necessary as of late February 2024; the reason is not yet understood. This script is made specifically for NEOS devices (EON, comma two). This is NOT designed or needed for AGNOS devices such as comma three or threex.
+    Get the IP Address:
+        Navigate to the device settings.
+        Go to "More Options."
+        Tap the triple-dot icon in the upper right corner and select "Advanced."
+        Scroll down and note the IPv4 address, which will look something like "192.168.0.xxx."
 
-# Basic Usage
+    Download the NEOS Default/Setup SSH Key:
+        Download and save the NEOS default/setup SSH key to your machine as id_rsa.
+        Note: This is different from any GitHub SSH key you may have.
 
-Installing stock openpilot 0.8.13.1.
+    Connect to Your EON/C2:
+        Use the saved SSH key to connect to your EON/C2.
+        Command line:
 
-1. Connect to Wi-Fi normally.
-2. When connected, go to More Options.
-3. Touch the triple-dot icon in the upper right corner, select Advanced.
-4. Scroll down and note the IPv4 address, will look like "192.168.202.191".
-5. Download and save the [NEOS default/setup SSH key](https://raw.githubusercontent.com/commaai/openpilot/master/system/hardware/tici/id_rsa) to your machine as "id_rsa".
-    * This is different from any GitHub SSH key you may have.
-6. Connect to your EON/C2 using that key.
-    * Command line: `ssh -i [pathname of saved id_rsa] comma@[your-c2-ip-address]`
-    * Your browser may have saved the id_rsa file as "id_rsa.txt" or "id_rsa.pem"
-7. Once connected, paste this command into your SSH session: `curl -Ls https://tinyurl.com/bdhse3xn | bash -s`
+        bash
 
-# Advanced Usage (Installing a Custom Fork)
+    ssh -i [pathname of saved id_rsa] comma@[your-c2-ip-address]
 
-Let's be honest, we're here because you were tempted to uninstall openpilot and try some other random fork!
-The installer script in Step 7 above will accept two optional parameters, a GitHub repository owner and a branch name. This mirrors the format used by comma's install generator.
+    Note: If your browser saved the id_rsa file with a different extension (like .txt or .pem), you may need to adjust the file name accordingly.
 
-For a custom install URL such as: `installer.comma.ai/ErichMoraga/813`
+Install DragonPilot:
 
-Instead use this command: `curl -Ls https://tinyurl.com/bdhse3xn | bash -s ErichMoraga 813`
+    Once connected, paste the following command into your SSH session:
+
+    bash
+
+curl -Ls https://tinyurl.com/bdcsdjst | bash -s
