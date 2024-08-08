@@ -29,6 +29,8 @@ Open a terminal and run the following command, replacing [pathname of saved id_r
 Step 5: Install DragonPilot
 🐉 Once connected via SSH, run the following command to install DragonPilot:
 
-    bash curl -Ls https://tinyurl.com/4zbptv43 | bash -s
-    
+    curl -Ls https://tinyurl.com/4zbptv43 | bash -s
+
+![image](https://github.com/user-attachments/assets/320232c9-997c-4c7e-8fc9-5c3ab5c977da)
+
 This README provides the essential steps to get DragonPilot up and running on your EON/C2 device. If you encounter any issues or have questions, feel free to reach out to the community for support.
