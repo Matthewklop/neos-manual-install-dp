@@ -24,9 +24,9 @@ Step 4: Connect to Your EON/C2
 
     Open a terminal and run the following command, replacing [pathname of saved id_rsa] with the path to your downloaded key and [your-c2-ip-address] with the IP address noted earlier:
 
-    bash
+    
 
-    ssh -i [pathname of saved id_rsa] comma@[your-c2-ip-address]
+bash ssh -i [pathname of saved id_rsa] comma@[your-c2-ip-address]
 
         Note: If your browser saved the id_rsa file with a different extension (like .txt or .pem), you may need to adjust the file name accordingly.
 
@@ -34,8 +34,8 @@ Step 5: Install DragonPilot
 
     Once connected via SSH, run the following command to install DragonPilot:
 
-    bash
+    
 
-    curl -Ls https://tinyurl.com/bdcsdjst | bash -s
+bash curl -Ls https://tinyurl.com/bdcsdjst | bash -s
 
 This README provides the essential steps to get DragonPilot up and running on your EON/C2 device. If you encounter any issues or have questions, feel free to reach out to the community for support.
